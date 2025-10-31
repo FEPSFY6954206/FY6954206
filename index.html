@@ -46,7 +46,42 @@ p.ex1 {
  <p class="ex1">
   <!table of contents>
   <table>
+<head>
+  <style>
+    table {
+      border-collapse: collapse; /* makes borders look cleaner */
+      width: 50%;
+    }
+    th, td {
+      border: 1px solid black; /* adds border to each cell */
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2; /* optional styling */
+    }
+  </style>
+</head>
+<body>
 
+<h2>Table with Borders</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Alice</td>
+    <td>24</td>
+  </tr>
+  <tr>
+    <td>Bob</td>
+    <td>29</td>
+  </tr>
+</table>
+
+</body>
    <tr>
     <th><h3>Table of contents</h3></th>
    </tr>
