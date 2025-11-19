@@ -10,7 +10,7 @@
  <h2 style="font-size:36px; font-family:calibri;"<b>The Formation of The Milky Way’s Stellar Components from Gas Clouds to Star Clusters</b></h2>
  
 <!table of contents>
- <table style="width:70%">
+ <table style="width:90%">
  <style>
 table, th, td {
   border:1px solid black;
@@ -34,6 +34,9 @@ table, th, td {
    <td><a href="#Star clusters">Formation and evolution of star clusters</td>
  </tr>
 </table>
+
+
+
   
  <h2  id="Abstract" style="font-family:calibri;"><b>Abstract</b></h2>
  
@@ -44,18 +47,27 @@ table, th, td {
  of each cluster experience gravitational interactions with each other and the stars change orbit and velocities.
 </pre>
 
+
+
+
+  
 <h2 id="Introduction" style="font-family:calibri;"><b>Introduction</b></h2>
 
-<pre>
+<pre id="IntroductionParagraph">
  The age of the Milky Way galaxy we live in is approximately 13.6 billion ± 600 million years old. The Milky Way is an example of what is referred to as a barred spiral galaxy. 
  Before it was a galaxy, it began as a spheroidal large cloud of gases and dark matter that underwent gravitational collapse as the dark matter drew the gases towards its centre. This 
  created a dense mass of high kinetic energy hydrogen atoms that undergo nuclear fusion and release huge amounts of energy.  Radiation from this caused a pressure that stabilises the core’s 
  gravitational forces and would form a star. The formation of hundreds of billions of these stars would become the foundation of the Milky Way galaxy. 
 </pre> 
 
+
+
+
+
+  
 <h2 id="Nuclear fusion" style="font-family:calibri;"><b>The nuclear fusion of hydrogen atoms forming stable stars</b></h2>
 
- <pre>
+ <pre id="NuclearFusion">
   When the gases are attracted together by gravitational forces, also known as gravitational collapse, there is work done on the particles of these gases. As a result, their kinetic energy
   and temperature increase rapidly to the point where denser areas of the gas begin to glow. This creates a core of gas particles called a protostar (O’Neill, M. 2015, pp. 98). As more gas is attracted,
   the temperature rises even further, reaching temperatures of millions of degrees kelvin. Due to the increase in the gas temperature, the hydrogen atoms in the gas can reach a kinetic energy of 
@@ -68,9 +80,13 @@ table, th, td {
 
  <img src="Nuclear fusion process.png" alt="Banner" width="600" height="200">
 
+
+
+
+  
 <h2 id="Star clusters"style="font-family:calibri;"><b>Formation and evolution of star clusters:</b></h2>
 
-<pre>
+<pre id="StarClusters">
  Present in the Milky Way are thousands of star clusters, which are stellar systems formed of many stars. The 3 main types of clusters in the Milky Way are open clusters, globular clusters and stellar associations.
  In the case of the Milky Way, open clusters are more frequent with thousands of known clusters and many more unknown predicted to be present.  
 </pre>
@@ -104,7 +120,7 @@ table, th, td {
   </tr>
 </table>
 
- <pre>
+ <pre id="StarClusters">
   Open clusters are formed of both older and younger stars that are more spread out than in globular clusters. However, both are similar in structure and evolution. Their densities are concentrated more towards
   the centre and decrease outwards. This is a result of two body relaxation, a process where a star’s velocity is altered due to gravitational interactions where the star exchanges and transfers gravitational potential
   energy to kinetic energy with other stars within the cluster which changes the orbit of the star. During these interactions, he velocities of high mass stars decrease and reach a lower orbit radius towards the centre
@@ -184,10 +200,11 @@ table, th, td {
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis");
+    const IntroductionCount = displayWordCount("IntroductionParagraph");
+    const AnalysisCount = displayWordCount("NuclearFusion");
+    const ClusterCount = displayWordCount("StarClusters");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisCount + ClusterCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
