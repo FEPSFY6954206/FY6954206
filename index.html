@@ -147,7 +147,7 @@ table, th, td {
 </div>
   
  <div style="text-align: center;">
-<pre id="Analysis" style="font-size:18px; font-family:georgia;" style="text-align: center;">
+<pre id="Clusters" style="font-size:18px; font-family:georgia;" style="text-align: center;">
  Present in the Milky Way are thousands of star clusters, which are stellar systems formed of many stars. The 3 main types of clusters in the Milky Way are open clusters, globular clusters and stellar associations.
  In the case of the Milky Way, open clusters are more frequent with thousands of known clusters and many more unknown predicted to be present.  
 </pre>
@@ -183,7 +183,7 @@ table, th, td {
 </table>
 
  <div style="text-align: center;">
- <pre id="Analysis" style="font-size:18px; font-family:georgia;" style="text-align: center;">
+ <pre id="Clusters" style="font-size:18px; font-family:georgia;" style="text-align: center;">
  Open clusters are formed of both older and younger stars that are more spread out than in globular clusters. However, both are similar in structure and evolution. Their densities are concentrated more towards
  the centre and decrease outwards. This is a result of two body relaxation, a process where a star’s velocity is altered due to gravitational interactions where the star exchanges and transfers gravitational potential
  energy to kinetic energy with other stars within the cluster which changes the orbit of the star. During these interactions, he velocities of high mass stars decrease and reach a lower orbit radius towards the centre
@@ -230,9 +230,10 @@ table, th, td {
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("IntroductionParagraph");
-    const AnalysisCount = displayWordCount("Analysis");
+    const FusionCount = displayWordCount("FusionParagraph");
+    const ClusterCount = displayWordCount("Clusters");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + FusionCount + ClusterCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
