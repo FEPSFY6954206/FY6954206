@@ -101,36 +101,34 @@ article {
   }
 </style>
 
-<!table of contents>
- <table class="center-table" style="width:90%" >
  <style>
-table, th, td {
-  border:1px solid black;
-  border-collapse: collapse;
-}
+  details {
+    margin: 1em 0;
+    padding: .7em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 320px;
+    background-color: #f8f8f8;
+  }
+  summary {
+    cursor: pointer;
+    font-size: 1.1em;
+  }
+  details[open] summary {
+    color: #3b82f6;
+  }
 </style>
-<table class="center-table">
- <tr>
-   <th><h3>Table of Contents</h3></th>
- </tr>
- <tr>
-   <td><a href="#Abstract">Abstract</td>
- </tr>
-  <tr>
-   <td><a href="#Introduction">Introduction</td>
- </tr>
- <tr>
-   <td><a href="#Nuclear fusion">The nuclear fusion of hydrogen atoms to form stable stars</td>
- </tr>
- <tr>
-   <td><a href="#Star clusters">Formation and evolution of star clusters</td>
- </tr>
-  <tr>
-   <td><a href="#References">References</td>
- </tr>
-</table>
 
-
+<details>
+  <summary><strong>Table of Contents</strong></summary>
+  <ol>
+    <li><a href="#Abstract">Abstract</a></li>
+    <li><a href="#Introduction">Introduction</a></li>
+    <li><a href="#Nuclear fusion">The nuclear fusion of hydrogen atoms to form stable stars</a></li>
+    <li><a href="#Star clusters">Formation and evolution of star clusters</a></li>
+    <li><a href="#References">References</a></li>
+  </ol>
+</details>
 
  <div style="text-align: center;">  
  <h2  id="Abstract" class="header-space">Abstract</h2>
@@ -218,12 +216,12 @@ table, th, td {
   <tr>
     <td>Globular clusters</td>
     <td>150</td>
-    <td>50</td>
+    <td>150-180</td>
   </tr>
   <tr>
     <td>Open clusters</td>
     <td>1000</td>
-    <td>94</td>
+    <td>10000-100000</td>
   </tr>
    <tr>
     <td>Stellar associations</td>
@@ -242,6 +240,11 @@ table, th, td {
  disk and differential rotation in the centre of the cluster. Differential rotation is the difference in angular velocity (rate of rotation) between stars within the cluster.Over time these effects heavily alter the shape
  of the cluster.
   
+  <figure style="text-align: center; margin-top: 5px;">
+   <img src="M45_WN.jpg" alt="Banner" width="1000" height="400" style="display: block; margin: 0 auto;">
+  <figcaption> The nuclear fusion of hydrogen nuclei </figcaption>
+ </figure>
+
  Stellar associations are very loosely bound clusters of young stars where all the stars share a common origin but are not gravitationally bound to each other. They are categorised by OB associations made up of young 
  massive stars (15-90x the mass of the Sun for O-type and 2-15x the mass of the Sun for B-type); R associations formed of young, bright stars of 3-10x the size of the Sun and T associations made from young, low mass 
  stars of similar mass to the Sun. It is unknown how many of them are in the Milky Way.
